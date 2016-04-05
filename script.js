@@ -26,8 +26,8 @@ info.onAdd = function (map) {
 
 // Edit text and variables to match those in your GeoJSON data
 info.update = function (props) {
-  this._div.innerHTML = '<h4>Connecticut Town<br />5 Year Arrest Rate</h4>' +  (props ?
-    '<b>' + props.town + '</b><br />' + props.5 year OCD Offense Assualt Total 2010-2014 + ' per 100,000'
+  this._div.innerHTML = '<h4>Connecticut Town<br />5YearArrestRate</h4>' +  (props ?
+    '<b>' + props.town + '</b><br />' + props.5YearArrestRate + ' per 100,000'
     : 'Hover over a town');
 };
 info.addTo(map);
@@ -51,7 +51,7 @@ function style(feature) {
     opacity: 1,
     color: 'black',
     fillOpacity: 0.7,
-    fillColor: getColor(feature.properties.5 year OCD Offense Assualt Total 2010-2014)
+    fillColor: getColor(feature.properties.5YearArrestRate)
   };
 }
 
