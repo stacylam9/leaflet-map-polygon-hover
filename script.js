@@ -86,7 +86,7 @@ function onEachFeature(feature, layer) {
 }
 
 // Edit to upload GeoJSON data file from your local directory; removed var = geoJsonLayer since this is declared above
-$.getJSON("hc-towns-arrest.geojson", function (data) {
+$.getJSON("hc-towns-arrest-rate.geojson", function (data) {
   geoJsonLayer = L.geoJson(data, {
     style: style,
     onEachFeature: onEachFeature
